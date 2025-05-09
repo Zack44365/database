@@ -337,36 +337,44 @@
             </div>
         </div>
         
-        <!-- Slide 3: Tipi di relazioni -->
-        <div class="slide" id="slide3">
-            <h1>Tipi di Relazioni nei Database</h1>
-            <p>Le relazioni definiscono come i dati in una tabella sono collegati ai dati in un'altra tabella.</p>
-            
-            <div class="relationship-example">
-                <div class="relationship-card">
-                    <h3>Relazione Uno-a-Uno <br>(1:1)</h3>
-                    <img src="uno a uno.PNG" width="100" height="100">
-                    <p>Un record in una tabella è associato a un solo record in un'altra tabella.</p>
-                    <p><strong>Esempio:</strong>ogni persona ha una sola carta di identità</p>
-                </div>
-                
-                <div class="relationship-card">
-                    <h3>Relazione Uno-a-Molti (1:N)</h3>
-                    <img src="Cattura.PNG" width="100" height="100">
-                    <p>Un record in una tabella può essere associato a molti record in un'altra tabella.</p>
-                    <p><strong>Esempio:</strong> Un cliente può effettuare molti ordini, ma ogni ordine è associato a un solo cliente.</p>
-                </div>
-                
-                <div class="relationship-card">
-                    <h3>Relazione Molti-a-Molti (N:M)</h3>
-                    <img src="DB_M_to_M.png" width="100" height="100">
-                    <p>Molti record in una tabella possono essere associati a molti record in un'altra tabella.</p>
-                    <p><strong>Esempio:</strong> Uno studente può iscriversi a molti corsi e un corso può avere molti studenti iscritti.</p>
-                    <p>Implementata tramite una tabella di join.</p>
-                </div>
-            </div>
-            
-            <h3>Esempio di implementazione</h3>
+<!-- Slide 3: Tipi di relazioni -->
+<div class="slide" id="slide3">
+    <h1>Tipi di Relazioni nei Database</h1>
+    <p>Le relazioni definiscono come i dati in una tabella sono collegati ai dati in un'altra tabella.</p>
+    
+    <div class="relationship-example">
+        <div class="relationship-card">
+            <h3>Relazione Uno-a-Uno <br>(1:1)</h3>
+            <img src="uno a uno.PNG" width="100" height="100">
+            <p>Un record in una tabella è associato a un solo record in un'altra tabella.</p>
+            <p><strong>Esempio:</strong>ogni persona ha una sola carta di identità</p>
+        </div>
+        
+        <div class="relationship-card">
+            <h3>Relazione Uno-a-Molti (1:N)</h3>
+            <img src="Cattura.PNG" width="100" height="100">
+            <p>Un record in una tabella può essere associato a molti record in un'altra tabella.</p>
+            <p><strong>Esempio:</strong> Un cliente può effettuare molti ordini, ma ogni ordine è associato a un solo cliente.</p>
+        </div>
+        
+        <div class="relationship-card">
+            <h3>Relazione Molti-a-Molti (N:M)</h3>
+            <img src="DB_M_to_M.png" width="100" height="100">
+            <p>Molti record in una tabella possono essere associati a molti record in un'altra tabella.</p>
+            <p><strong>Esempio:</strong> Uno studente può iscriversi a molti corsi e un corso può avere molti studenti iscritti.</p>
+            <p>Implementata tramite una tabella di join.</p>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <button onclick="prevSlide()">Indietro</button>
+        <button onclick="nextSlide()">Avanti</button>
+    </div>
+</div>
+
+        <!-- Slide 4: Tipi di relazioni -->
+        <div class="slide" id="slide4">
+            <h1>Esempio di implementazione</h1>
             <pre><code>-- Relazione 1:N tra clienti e ordini
 CREATE TABLE clienti (
     id INT PRIMARY KEY,
@@ -407,7 +415,7 @@ CREATE TABLE iscrizioni (
         </div>
         
         <!-- Slide 4: Query SQL -->
-        <div class="slide" id="slide4">
+        <div class="slide" id="slide5">
             <h1>Query SQL</h1>
             <p>Le query SQL ci permettono di interagire con il database per recuperare, inserire, aggiornare ed eliminare dati.</p>
             
@@ -487,7 +495,7 @@ ORDER BY totale_speso DESC;</code></pre>
         </div>
         
         <!-- Slide 5: Tipi di dati -->
-        <div class="slide" id="slide5">
+        <div class="slide" id="slide6">
             <h1>Tipi di Dati nei Database</h1>
             <p>Ogni colonna in una tabella deve avere un tipo di dati specifico che definisce il tipo di valori che può contenere.</p>
             
@@ -569,7 +577,7 @@ ORDER BY totale_speso DESC;</code></pre>
         </div>
         
         <!-- Slide 6: Esercizio guidato -->
-        <div class="slide" id="slide6">
+        <div class="slide" id="slide7">
             <h1>Esercizio Guidato: Relazioni 1:1 e 1:N</h1>
             <p>In questo esercizio creeremo un database per gestire dipendenti e i loro uffici (relazione 1:1) e i progetti a cui lavorano (relazione 1:N).</p>
             
